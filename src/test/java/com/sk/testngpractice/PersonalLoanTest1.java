@@ -10,7 +10,7 @@ public class PersonalLoanTest1 {
 		System.out.println("pl1Test1");
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void pl1Test2() {
 		System.out.println("pl1Test2");
 	}
