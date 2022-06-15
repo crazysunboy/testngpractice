@@ -51,3 +51,4 @@ z_build
 outputDir/
 **/Version.java
 *.pdf
+.gitignore
