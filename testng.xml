@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loans">
+<parameter name="param1" value="SuiteParam1"></parameter>
+	<listeners>
+		<listener class-name="com.sk.testngpractice.TestNGTestListeners"></listener>
+	</listeners>	
+  <test name="PersonalLoan">
+  <parameter name="plparam1" value="PersonalLoanParam1"></parameter>
+    <classes>
+      <class name="com.sk.testngpractice.PersonalLoanTest1">
+      	<methods>
+      		<exclude name="pl1Test1" />
+      	</methods>
+      </class>
+      <class name="com.sk.testngpractice.PersonalLoanTest2"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="HomelLoan">
+    <classes>
+      <class name="com.sk.testngpractice.HomeLoanTest1">
+      	<methods>
+      		<include name="hl1Test1"></include>
+      	</methods>
+      </class>
+      <class name="com.sk.testngpractice.HomeLoanTest2"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="CarLoan">
+    <classes>
+      <class name="com.sk.testngpractice.CarLoanTest1"/>
+      <class name="com.sk.testngpractice.CarLoanTest2"/>
+    </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->
