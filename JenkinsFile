@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent azure
     tools {
         maven 'apache-maven-3.8.1'
     }
