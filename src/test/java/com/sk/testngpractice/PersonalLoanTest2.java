@@ -5,8 +5,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class PersonalLoanTest2 {
-	
-	@Test(parameters = {"param1","plparam1"})
+
+	@Parameters({"param1","plparam1"})
+	@Test
 	public void pl2Test1(String suiteParam, String plParam) {
 		System.out.println("pl2Test1");
 		System.out.println("Suite Param: " + suiteParam + " Personal Loan Param: " + plParam);

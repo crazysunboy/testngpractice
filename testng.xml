@@ -6,7 +6,7 @@
 		<listener class-name="com.sk.testngpractice.TestNGTestListeners"></listener>
 	</listeners>	
   <test name="PersonalLoan">
-  <parameter name="plparam1" value="PersonalLoanParam1"></parameter>
+      <parameter name="plparam1" value="PersonalLoanParam1"/>
     <classes>
       <class name="com.sk.testngpractice.PersonalLoanTest1">
       	<methods>

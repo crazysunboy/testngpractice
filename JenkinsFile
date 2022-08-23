@@ -14,9 +14,14 @@ pipeline {
                 bat 'mvn test'
             }
         }
-        stage('Publish TestNG Results'){
+        stage('Publish Report'){
             steps{
                 step([$class: 'Publisher'])
+                cleanWs()
+            }
+        }
+		stage('Cleanup Workspace'){
+            steps{
                 cleanWs()
             }
         }
